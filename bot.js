@@ -15,6 +15,14 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
+  if (msg.content === '$עזרה') {
+    msg.reply('$aboutclan,$rules, חוקים$, $עלהקלאן ');
+  }
+});
+
+
+
+client.on('message', msg => {
   if (msg.content === '$aboutclan') {
     msg.reply('\n KWR - \n 1.KwR_Ra1nZo :מנהל \n 2. מידע: הקלאן הוא קלאן ישראלי');
   }
